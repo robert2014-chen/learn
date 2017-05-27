@@ -254,5 +254,6 @@
   
   <modules>
     <module>learn-mybatis</module>
+     <module>learn-shiro</module>
   </modules>
 </project>
