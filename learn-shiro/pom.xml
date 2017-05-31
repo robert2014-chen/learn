@@ -15,4 +15,7 @@
   </properties>
   
   <packaging>pom</packaging>
+  <modules>
+  	<module>shiro-complex</module>
+  </modules>
 </project>
