@@ -39,7 +39,10 @@
 		<log4j.version>1.2.17</log4j.version>
 		<!--单元测试 -->
 		<junit.version>4.12</junit.version>
+		<!-- web -->
 		<servlet.version>3.1.0</servlet.version>
+		<!-- 权限之shiro -->
+		<shiro.version>1.4.0</shiro.version>
 	</properties>
 
 	<dependencyManagement>
@@ -222,6 +225,19 @@
 				<artifactId>fastjson</artifactId>
 				<version>1.2.31</version>
 			</dependency>
+			<!-- 权限之shiro -->
+			<!-- 权限之shiro的准备 -->
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-core</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+			<!-- 权限之shiro的与web的集成 -->
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-web</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -238,6 +254,12 @@
 						<target>1.8</target>
 						<encoding>${project.build.sourceEncoding}</encoding>
 					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.4</version>
 				</plugin>
 
 				<plugin>
