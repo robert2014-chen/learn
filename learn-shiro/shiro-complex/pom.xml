@@ -8,9 +8,7 @@
 		<artifactId>learn-shiro</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.robert.learn</groupId>
 	<artifactId>shiro-complex</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>shiro-complex Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -39,8 +37,17 @@
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>javax.servlet.jsp.jstl</artifactId>
 		</dependency>
+		<!-- shiro -->
+
 	</dependencies>
 	<build>
 		<finalName>shiro-complex</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+			</plugin>
+		</plugins>
 	</build>
 </project>
