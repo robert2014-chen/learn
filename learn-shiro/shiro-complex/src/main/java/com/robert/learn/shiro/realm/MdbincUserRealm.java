@@ -10,22 +10,27 @@ import org.apache.shiro.subject.PrincipalCollection;
 /**
  * 
  * 
- * @Description mdbinc系统用户验证
+ * @Description mdbinc系统用户的验证与授权
  * 
- * @author robert
- * @time 2017年6月1日 下午5:05:22
+ * @author robert.qiang.chen@gmail.com
+ * 
+ * @time 2017年6月2日 上午9:08:17
  */
 public class MdbincUserRealm extends AuthorizingRealm {
 
+	//授权，即获取当前用户的权限
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection arg0) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * 验证，即验证用户是否为系统用户
+	 */
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken arg0) throws AuthenticationException {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
