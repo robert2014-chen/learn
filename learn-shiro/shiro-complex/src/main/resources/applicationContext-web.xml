@@ -16,4 +16,8 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
+	<!-- 配置资源请求 -->
+	<mvc:resources location="/resources/css/" mapping="/css/**"></mvc:resources>
+	<mvc:resources location="/resources/scripts/" mapping="/scripts/**"></mvc:resources>
+
 </beans>
