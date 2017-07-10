@@ -24,7 +24,7 @@ public class MyRealm2 implements Realm {
 	 */
 	@Override
 	public String getName() {
-		return "a"; //realm name 为 “a”
+		return "b"; //realm name 为 “a”
 	}
 
 	/* (non-Javadoc)
