@@ -18,10 +18,6 @@
 			<table class="ie_notice" style="border: 0">
 				<tbody>
 					<tr>
-						<td><img class="logo_osc"
-							src="${ctx}/css/login/background-imgs/login-background.jpg"  alt="背景图"></td>
-					</tr>
-					<tr>
 						<td><h2 class="title">我们不支持 IE 10 及以下版本浏览器</h2></td>
 					</tr>
 					<tr>
@@ -38,14 +34,14 @@
 									<a
 										href="http://www.google.cn/chrome/browser/desktop/index.html"
 										target="_blank" title="下载Chrome浏览器"> <img
-										src="./登录 - 开源中国社区_files/logo_chrome.png">
+										src="${ctx}/css/login/imgs/logo_chrome.png">
 									</a> <a href="http://www.firefox.com.cn/" target="_blank"
 										title="下载Firefox浏览器"> <img
-										src="./登录 - 开源中国社区_files/logo_firefox.png">
+										src="${ctx}/css/login/imgs/logo_firefox.png">
 									</a> <a
 										href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie"
 										target="_blank" title="升级IE浏览器"> <img
-										src="./登录 - 开源中国社区_files/logo_ie.png">
+										src="${ctx}/css/login/imgs/logo_ie.png">
 									</a>
 								</div>
 								<div>
@@ -100,9 +96,9 @@
 
 
 	<link type="text/css" rel="stylesheet"
-		href="${ctx }/css/login/login.css">
+		href="${ctx }/css/login/css/login.css">
 	<link type="text/css" rel="stylesheet"
-		href="${ctx }/css/login/login-main.css">
+		href="${ctx }/css/login/css/login-main.css">
 
 
 	<section class="box vertical home-wrapper">
