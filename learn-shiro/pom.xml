@@ -11,7 +11,22 @@
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <commons.version>1.2</commons.version>
   </properties>
+
+  <dependencyManagement>
+
+    <dependencies>
+
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>${commons.version}</version>
+      </dependency>
+
+    </dependencies>
+
+  </dependencyManagement>
   
   <packaging>pom</packaging>
   <modules>
